@@ -13,63 +13,91 @@
 <body>
 
     <header class="introduction">
-        <img src="https://wayup.in/courses/course10/lesson2/logo.jpg" alt="Логотип wayup">
-        <h1 class="introduction__title">
-            Вступление
-        </h1>
-        <div class="introduction__text">
-            <p class="introduction__text-first">
-                Это текст моего первого дз
-            </p>
-            <p class="introduction__text-second">
-                Не верится, но мне уже удается писать свйо <span>первый код на HTML.</span>
-            </p>
+        <div class="container">
+            <div class="introduction__logo"><img src="img/logo/logo.png" alt="Логотип wayup"></div>
+            <div class="wrapper">
+                <div class="introduction__text">
+                    <h1 class="introduction__text-title title">
+                        С помощью верстки я создам ту жизнь, о которой <span>мечтаю!</span>
+                    </h1>
+                    <p class="introduction__text-subtitle">
+                        Мои стремления + настойчивость позволят мне достичь чего угодно. Я не верю в это. Я знаю это на 100%. Меня не остановить!
+                    </p>
+                    <a href="#" class="introduction__link link">Двигаться к мечтам!</a>
+                </div>
+                <div class="introduction__img">
+                    <img src="img/introduction/img-1.png" alt="">
+                </div>
+            </div>
         </div>
     </header>
 
     <section class="further">
-        <h2 class="further__title title">
-            ЧТо дальше?
-        </h2>
-        <p class="further__text">
-            Дальше я буду получать все больше и больше опыта в разработке сайтов что бы достичь новых вершин!
-            <a href="http://www.google.com" class="further__text-link" target="_blank"></a>
-        </p>
-    </section>
-
-    <section class="skills">
-        <h2 class="skills__title title">
-            Что я буду уметь дальше?
-        </h2>
-        <p class="skills__text">
-            Я смогу создавать вот такие замечательные формы
-        </p>
-
-        <form action="#" class="skills__form">
-            <input type="text" name="name" placeholder="Имя">
-            <input type="email" name="email" id="" placeholder="E-mail">
-            <input type="tel" name="phone" id="" placeholder="Телефон">
-            <button class="skills__form-btn">Отправить форму</button>
-        </form>
-
-        <div class="skills__list">
-            <p class="skills__list-text">
-                А также,я научусь создавать списки
-            </p>
-            <ul>
-                <li>С одним пунктом</li>
-                <li>с нексколькими пунктами</li>
-                <li>И даже с 3 отдельными пунктами</li>
-            </ul>
+        <div class="container">
+            <h2 class="further__title title">
+                ЧТо дальше?
+            </h2>
+            <div class="wrapper">
+                <div class="further__item">
+                    <div class="further__item-img">
+                        <img src="img/further/clock.png" alt="">
+                    </div>
+                    <div class="further__item-title title">
+                        Свободное время
+                    </div>
+                    <div class="further__item-subtitle">
+                        Мне нужно свободное время на семью и самое настоящее
+                    </div>
+                </div>
+                <div class="further__item">
+                    <div class="further__item-img">
+                        <img src="img/further/palm.png" alt="">
+                    </div>
+                    <div class="further__item-title title">
+                        Яркие путешествия
+                    </div>
+                    <div class="further__item-subtitle">
+                        Работать откуда угодно - что может быть лучше?
+                    </div>
+                </div>
+                <div class="further__item">
+                    <div class="further__item-img">
+                        <img src="img/further/rocket.png" alt="">
+                    </div>
+                    <div class="further__item-title title">
+                        Создание ценности
+                    </div>
+                    <div class="further__item-subtitle">
+                        Нет ничего сильнее, чем жить не просто так, создавая ценность
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="end">
-        <h2 class="end__title title">
-            Отличное начало!
-        </h2>
-        <a href="https://wayup.in/cabinet/course10-10-wave/unit1/lesson2" class="end__link" target="_blank">Перейти на страницу первого занятия</a>
+    <section class="ticket">
+        <div class="container">
+            <h2 class="ticket__title title">
+                Форма заказа билета в будущее
+            </h2>
+            <form action="#" class="ticket__form">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="email" name="email" id="" placeholder="E-mail">
+                <input type="tel" name="phone" id="" placeholder="Телефон">
+                <input type="text" name="town" id="" placeholder="Куда я полечу в ближайшее время?">
+                <button class="ticket__form-btn link">Двигаться к мечте</button>
+            </form>
+        </div>
+
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__text">
+                © Все мои мечты защищены моим трудолюбием
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

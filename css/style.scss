@@ -1,69 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import "null.scss";
+$introductionColor:#fff;
+$linkColor:#ffd429;
+$bgTicket: #ecf3f8;
+.container {
+    max-width: 1160px;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
 .introduction {
-    img {
-        max-width: 150px;
-    }
-    // .introduction__title
-    &__title {
-        color: red;
-    }
+    background: -webkit-linear-gradient(135deg, rgb(78, 190, 254), rgb(55, 143, 217));
+    background: -moz-linear-gradient(135deg, rgb(78, 190, 254), rgb(55, 143, 217));
+    background: linear-gradient(135deg, rgb(78, 190, 254), rgb(55, 143, 217));
+    padding-top: 60px;
+    color: $introductionColor;
     // .introduction__text
-    &__text {}
-    // .introduction__text-first
-    &__text-first {
-        background-color: blue;
-        color: #fff;
-        max-width: 100px;
-        // line-height: 1;
-        margin-bottom: 70px;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    // .introduction__text-second
-    &__text-second {
+    &__logo {
+        max-width: 100px;
+    }
+    &__text {}
+    // .introduction__text-title
+    &__text-title {
+        max-width: 560px;
+        font-size: 37px;
         span {
-            color: red;
+            font-size: 59px;
         }
     }
+    // .introduction__text-subtitle
+    &__text-subtitle {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        max-width: 400px;
+        font-size: 16px;
+        margin-bottom: 45px;
+    }
+    // .introduction__link
+    &__link {
+        padding: 25px;
+    }
+    // .introduction__img
+    &__img {}
+}
+
+.link {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $linkColor;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    color: #000;
 }
 
 .further {
     // .further__title
-    &__title {}
-    // .further__text
-    &__text {}
-    // .further__text-link
-    &__text-link {}
-}
-
-.skills {
-    // .skills__title
+    padding: 115px 0;
+    text-align: center;
     &__title {
-        padding: 30px 0px 30px 20px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        margin-bottom: 75px;
     }
-    // .skills__text
-    &__text {
-        margin-left: 80px;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
     }
-    // .skills__form
-    &__form {}
-    // .skills__form-btn
-    &__form-btn {}
-    // .skills__list
-    &__list {
-        li {
-            border: 1px solid #000;
+    // .further__item
+    &__item {
+        flex: 0 0 33.333%;
+    }
+    // .further__item-img
+    &__item-img {
+        img {
+            display: inline-block;
+            margin-bottom: 30px;
+            // width: 50px;
+            height: 65px;
         }
     }
-    // .skills__list-text
-    &__list-text {}
-}
-
-.end {
-    // .end__title
-    &__title {}
-    // .end__link
-    &__link {}
+    // .further__item-title
+    &__item-title {
+        margin-bottom: 25px;
+        font-size: 19px;
+        line-height: 25px;
+    }
+    // .further__item-subtitle
+    &__item-subtitle {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 400;
+    }
 }
 
 .title {
-    color: #fff;
-    background-color: green;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.ticket {
+    // .ticket__title
+    background-color: $bgTicket;
+    padding: 105px 0;
+    text-align: center;
+    &__title {
+        margin-bottom: 60px;
+    }
+    // .ticket__form
+    &__form {
+        input {
+            display: block;
+            margin: 0 auto;
+            max-width: 343px;
+            width: 100%;
+            padding: 17px 0 17px 25px;
+            border: 1px solid #bbbbbb;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+    }
+    // .ticket__form-btn
+    &__form-btn {
+        padding: 20px 0;
+        max-width: 343px;
+        width: 100%;
+    }
+}
+
+.footer {
+    padding: 65px 0;
+    text-align: center;
+    background-color: #164d7a;
+    color: $introductionColor;
+    font-family: 'Myriad Pro', sans-serif;
+    // .footer__text
+    &__text {
+        font-size: 14px;
+    }
 }
