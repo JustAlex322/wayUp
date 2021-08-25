@@ -6,8 +6,7 @@ $introductionColor:#fff;
 $linkColor:#ffd429;
 $bgTicket: #ecf3f8;
 .container {
-    max-width: 1160px;
-    padding: 0 5px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -82,7 +81,6 @@ $bgTicket: #ecf3f8;
         img {
             display: inline-block;
             margin-bottom: 30px;
-            // width: 50px;
             height: 65px;
         }
     }
@@ -143,5 +141,94 @@ $bgTicket: #ecf3f8;
     // .footer__text
     &__text {
         font-size: 14px;
+    }
+}
+
+// 992 - 1200
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+//768 - 992
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .introduction {
+        &__link {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+// 576 - 768
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .introduction {
+        .wrapper {
+            flex-direction: column;
+        }
+        &__text {
+            width: 100%;
+        }
+        &__text-subtitle {
+            max-width: 100%;
+            margin-bottom: 25px;
+        }
+        &__link {
+            margin-bottom: 25px;
+            width: 100%;
+            text-align: center;
+        }
+        &__logo {
+            margin-bottom: 20px;
+        }
+        &__text-title {
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            span {
+                font-size: 30px;
+            }
+        }
+    }
+    .further {
+        // .further__title
+        padding: 50px 0;
+        &__title {
+            margin-bottom: 40px;
+        }
+        .wrapper {
+            flex-direction: column;
+        }
+        // .further__item
+        &__item {
+            flex: 0 0 33.333%;
+        }
+        // .further__item-img
+        &__item-img {
+            img {
+                margin-bottom: 10px;
+            }
+        }
+        // .further__item-title
+        &__item-title {
+            margin-bottom: 15px;
+        }
+        // .further__item-subtitle
+        &__item-subtitle {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+// 0 - 576
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 90%;
     }
 }
