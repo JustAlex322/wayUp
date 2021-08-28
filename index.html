@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +15,9 @@
 
     <header class="introduction">
         <div class="container">
-            <div class="introduction__logo"><img src="img/logo/logo.png" alt="Логотип wayup"></div>
+            <div class="introduction__logo"><img src="img/logo/logo.png" alt="Логотип wayup" class="animated fadeInDown"></div>
             <div class="wrapper">
-                <div class="introduction__text">
+                <div class="introduction__text animated fadeInLeft">
                     <h1 class="introduction__text-title title">
                         С помощью верстки я создам ту жизнь, о которой <span>мечтаю!</span>
                     </h1>
@@ -25,8 +26,8 @@
                     </p>
                     <a href="#" class="introduction__link link">Двигаться к мечтам!</a>
                 </div>
-                <div class="introduction__img">
-                    <img src="img/introduction/img-1.png" alt="">
+                <div class="introduction__img ">
+                    <img src="img/introduction/img-1.png" alt="" class="animated fadeInRight">
                 </div>
             </div>
         </div>
@@ -38,7 +39,7 @@
                 ЧТо дальше?
             </h2>
             <div class="wrapper">
-                <div class="further__item">
+                <div class="further__item" id="first-item">
                     <div class="further__item-img">
                         <img src="img/further/clock.png" alt="">
                     </div>
@@ -49,7 +50,7 @@
                         Мне нужно свободное время на семью и самое настоящее
                     </p>
                 </div>
-                <div class="further__item">
+                <div class="further__item" id="second-item">
                     <div class="further__item-img">
                         <img src="img/further/palm.png" alt="">
                     </div>
@@ -60,7 +61,7 @@
                         Работать откуда угодно - что может быть лучше?
                     </p>
                 </div>
-                <div class="further__item">
+                <div class="further__item" id="third-item">
                     <div class="further__item-img">
                         <img src="img/further/rocket.png" alt="">
                     </div>
@@ -81,10 +82,10 @@
                 Форма заказа билета в будущее
             </h2>
             <form action="#" class="ticket__form">
-                <input type="text" name="name" placeholder="Имя">
-                <input type="email" name="email" id="" placeholder="E-mail">
-                <input type="tel" name="phone" id="" placeholder="Телефон">
-                <input type="text" name="town" id="" placeholder="Куда я полечу в ближайшее время?">
+                <input type="text" name="name" placeholder="Имя" id="first-inp">
+                <input type="email" name="email" placeholder="E-mail" id="second-inp">
+                <input type="tel" name="phone" placeholder="Телефон" id="third-inp">
+                <input type="text" name="town" placeholder="Куда я полечу в ближайшее время?" id="four-inp">
                 <button class="ticket__form-btn link">Двигаться к мечте</button>
             </form>
         </div>
@@ -98,6 +99,9 @@
             </p>
         </div>
     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
